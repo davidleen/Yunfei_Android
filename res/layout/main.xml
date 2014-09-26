@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+        >
+    <CheckBox android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="模糊查询"
+              android:checked="false"
+                android:id="@+id/cb_like"
+            />
+    <LinearLayout
+            android:gravity="center"
+            android:layout_width="fill_parent" android:layout_height="wrap_content">
+
+        <EditText
+
+            android:id="@+id/et_prd_no"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+             android:drawableRight="@android:drawable/ic_menu_search"
+            />
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="扫描"
+            android:id="@+id/button" android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+    <ProgressBar
+            android:id="@+id/progress"
+            android:visibility="gone"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"  android:layout_gravity="center|center" />
+
+
+       <ListView
+               android:id="@+id/list"
+
+
+               android:layout_width="fill_parent" android:layout_height="0dp" android:layout_weight="1"></ListView>
+
+
+
+
+
+</LinearLayout>
+
